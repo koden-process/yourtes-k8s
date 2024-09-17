@@ -24,7 +24,7 @@ RUN apt-get install -y php7.4-cgi
 RUN apt-get install -y php7.4-xml
 RUN apt-get install -y php7.4-mbstring
 RUN apt-get install -y php7.4-zip
-RUN apt-get install -y libtiff5 php7.4-gd
+#RUN apt-get install -y libtiff5 php7.4-gd
 
 COPY php.ini /etc/php/7.4/apache2/php.ini
 

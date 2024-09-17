@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.AppName }}-config
+  namespace: {{ .Values.NameSpace }}
+data:
+  my.cnf: |
+    [mysqld]
+    server-id = {{ .Values.MariadbServerId }}
+    replicate-do-db = {{ .Values.MariadbDbName }}

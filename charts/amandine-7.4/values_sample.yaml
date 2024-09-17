@@ -1,0 +1,12 @@
+NameSpace: mycloud
+ShortName: MC
+NodePort: 32001
+AppName: mariadbapp
+
+MariadbReplicas: 1
+MariadbImageTag: latest
+MariadbDiskSize: 3Gi
+MariadbServerId: 2
+MariadbDbName: mydatabase
+MariadbDbUser: username
+MariadbDbPort: 3306
