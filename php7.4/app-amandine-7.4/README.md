@@ -2,7 +2,7 @@
 
 **Déploiement**
 ```sh
-helm install app-amandine-74 app-amandine-74 -f app-amandine-74/values_sample.yaml -n sandbox
+ helm install app-amandine-74 ./app-amandine-7.4 -f app-amandine-7.4/values_sample.yaml -n sandbox
 ```
 
 **Suppression**
