@@ -5,6 +5,7 @@
 **build**
 ```sh
 docker build -t amandine-7.4 .
+docker build --platform linux/amd64 -t killiankopp/amandine-7.4:latest .
 ```
 
 **run**

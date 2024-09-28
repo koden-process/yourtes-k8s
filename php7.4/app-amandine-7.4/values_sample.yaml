@@ -1,6 +1,4 @@
-NameSpace: sandbox
-ShortName: AM
-NodePort: 32555           # Un port dans la plage 30000-32767
+NameSpace: test76
 AppName: amandineapp
 
 HostName: test.toto.bzh
