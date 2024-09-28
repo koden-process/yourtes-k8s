@@ -1,0 +1,7 @@
+NameSpace: sandbox
+ShortName: AM
+NodePort: 32555           # Un port dans la plage 30000-32767
+AppName: amandineapp
+
+HostName: test.toto.bzh
+DiskSize: 1Gi

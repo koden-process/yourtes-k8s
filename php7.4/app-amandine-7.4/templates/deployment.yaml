@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.AppName }}
+  namespace: {{ .Values.NameSpace }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.AppName }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.AppName }}
+    spec:
+      containers:
+      - name: {{ .Values.AppName }}
+        image: killiankopp/amandine-7.4:latest
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: {{ .Values.AppName }}-data
+          mountPath: /var/www/html
+      volumes:
+      - name: {{ .Values.AppName }}-data
+        persistentVolumeClaim:
+          claimName: {{ .Values.AppName }}-pvc
