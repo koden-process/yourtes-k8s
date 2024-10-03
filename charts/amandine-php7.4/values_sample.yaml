@@ -11,4 +11,4 @@ MariadbDbUser: username
 MariadbDbPort: 3306
 
 HostName: test.toto.bzh
-DiskSize: 1Gi
+DiskSize: 5Gi
