@@ -31,3 +31,7 @@ docker run \
 ```sh
 helm uninstall app-amandine-74 -n <namespace>
 ```
+
+
+Source de données
+https://artifacthub.io/packages/helm/bitnami/mariadb

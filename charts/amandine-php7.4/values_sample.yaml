@@ -1,5 +1,14 @@
-NameSpace: test76
+NameSpace: mycloud
 AppName: amandineapp
+NodePort: 32001
+
+MariadbReplicas: 1
+MariadbImageTag: latest
+MariadbDiskSize: 3Gi
+MariadbServerId: 2
+MariadbDbName: mydatabase
+MariadbDbUser: username
+MariadbDbPort: 3306
 
 HostName: test.toto.bzh
 DiskSize: 1Gi
