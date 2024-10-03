@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ .Values.AppName }}
+  name: {{ .Values.AppName }}-mariadb-service
   namespace: {{ .Values.NameSpace }}
 spec:
   type: NodePort
   selector:
-    app: {{ .Values.AppName }}
+    app: {{ .Values.AppName }}-mariadb
   ports:
   - port: {{ .Values.MariadbDbPort }}
     targetPort: {{ .Values.MariadbDbPort }}

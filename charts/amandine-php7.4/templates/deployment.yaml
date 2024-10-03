@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Values.AppName }}
+  name: {{ .Values.AppName }}-amandine
   namespace: {{ .Values.NameSpace }}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: {{ .Values.AppName }}
+      app: {{ .Values.AppName }}-amandine
   template:
     metadata:
       labels:
-        app: {{ .Values.AppName }}
+        app: {{ .Values.AppName }}-amandine
     spec:
       containers:
-      - name: {{ .Values.AppName }}
+      - name: {{ .Values.AppName }}-amandine
         image: killiankopp/amandine-7.4:latest
         ports:
         - containerPort: 80
