@@ -1,0 +1,5 @@
+NameSpace: mycloud
+AppName: amandine-php7.4-app
+
+HostName: test.toto.bzh
+DiskSize: 5Gi

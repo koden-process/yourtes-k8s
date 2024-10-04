@@ -1,6 +1,6 @@
 apiVersion: v2
-name: app-amandine74
+name: amandine74-app
 description: Amandine PHP 7.4
 type: application
-version: 1.0.0
+version: 1.0.1
 appVersion: "3.1x.xx"

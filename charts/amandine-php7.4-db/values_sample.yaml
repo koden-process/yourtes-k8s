@@ -1,6 +1,6 @@
 NameSpace: mycloud
-AppName: amandineapp
-NodePort: 32001
+AppName: amandine-php7.4-db
+NodePort: 32101
 
 MariadbReplicas: 1
 MariadbImageTag: latest
@@ -9,6 +9,3 @@ MariadbServerId: 2
 MariadbDbName: mydatabase
 MariadbDbUser: username
 MariadbDbPort: 3306
-
-HostName: test.toto.bzh
-DiskSize: 5Gi
