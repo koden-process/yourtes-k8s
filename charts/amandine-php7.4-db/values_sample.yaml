@@ -1,5 +1,5 @@
 NameSpace: mycloud
-AppName: amandine-php7.4-db
+AppName: amandine-php74-db
 NodePort: 32101
 
 MariadbReplicas: 1
