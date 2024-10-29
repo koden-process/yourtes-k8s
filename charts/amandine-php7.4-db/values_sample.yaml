@@ -4,7 +4,7 @@ NodePort: 32101
 
 MariadbReplicas: 1
 MariadbImageTag: latest
-MariadbDiskSize: 3Gi
+MariadbDiskSize: 5Gi
 MariadbServerId: 2
 MariadbDbName: mydatabase
 MariadbDbUser: username

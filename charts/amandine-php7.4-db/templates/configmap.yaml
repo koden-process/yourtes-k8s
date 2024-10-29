@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ .Values.AppName }}-mariadb-config
+  name: {{ .Values.AppName }}-config
   namespace: {{ .Values.NameSpace }}
 data:
   my.cnf: |
