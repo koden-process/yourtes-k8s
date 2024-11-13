@@ -1,6 +1,5 @@
 NameSpace: mycloud
 AppName: amandine-php74-db
-NodePort: 32101
 
 MariadbReplicas: 1
 MariadbImageTag: latest

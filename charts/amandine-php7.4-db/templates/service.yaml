@@ -4,11 +4,10 @@ metadata:
   name: {{ .Values.AppName }}-service
   namespace: {{ .Values.NameSpace }}
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: {{ .Values.AppName }}
   ports:
   - port: {{ .Values.MariadbDbPort }}
     targetPort: {{ .Values.MariadbDbPort }}
     protocol: TCP
-    nodePort: {{ .Values.NodePort }}  # Un port dans la plage 30000-32767
