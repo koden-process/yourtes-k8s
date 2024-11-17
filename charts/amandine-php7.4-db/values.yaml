@@ -1,10 +1,10 @@
-NameSpace: mycloud
-AppName: amandine-php74-db
+NameSpace: koden-clients
+AppName: yourtes-db
 
 MariadbReplicas: 1
 MariadbImageTag: latest
 MariadbDiskSize: 5Gi
 MariadbServerId: 2
-MariadbDbName: mydatabase
-MariadbDbUser: username
+MariadbDbName: yourtes
+MariadbDbUser: yourtes
 MariadbDbPort: 3306
