@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: {{ .Values.AppName }}
-        image: killiankopp/amandine-7.4:latest
+        image: {{ .Values.DockerImage }}
         ports:
         - containerPort: 80
         volumeMounts:
